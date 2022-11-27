@@ -1,0 +1,228 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+.top-bar {
+  background: white;
+  height: 2.8rem;
+  padding: .5rem 0;
+}
+
+.top-bar a {
+  color: #63a8ce;;
+  text-decoration: none;
+  font-size: 1.1 rem;
+}
+
+
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+  height: 3rem;
+}
+
+.navbar {
+  font-size: 1.15 rem;
+  font-weight: 600;
+  letter-spacing: .1 rem;
+  box-shadow: 0.5 rem .5 rem rgba(0, 0, 0, .1);
+  z-index: 1;
+  background-color: #63a8ce;
+}
+
+.nav-item {
+  padding: .5rem;
+}
+
+.nav-link {
+  color: #FFFF !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #4981b3 !important;
+}
+
+
+/*============= CAROUSEL =============*/
+
+#carousel {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner {
+  max-height: 38 rem !important;
+}
+
+
+
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 1.2+2s ease;
+}
+
+
+
+/*-- Carousel Content --*/
+
+/* 3part iamges content  */
+.data-vines-circular{
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  margin-left: 2rem;
+}
+
+/* end 3part */
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  overflow: hidden;
+  /*-- Correction for iOS --*/
+}
+.fixed{
+background-image: url('../img/matrix.jpg');
+position: fixed;
+}
+.fixed-background {
+padding: 5rem 0;
+}
+
+.custom-fixed{
+  width: 100%;
+  height: 100%
+}
+
+/* .data-vines-jungle-content{
+  position: absolute;
+    left: 10rem;
+    width: 30rem;
+    margin-top: 40px;
+
+} */
+
+
+/* ========== List Item Style ============ */
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+  color: #63a8ce;
+  margin-right: 10px;
+
+}
+
+
+/*-- Emoji Navbar --*/
+
+
+
+/*============= Jungle section =============*/
+
+.data-vines-fullstack{
+  background-color: #63a8ce;
+  color: white;
+}
+
+/*============= FOOTER =============*/
+
+.footer-background{
+ background-color: #0c2344 !important;
+ color: white;
+}
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {}
+
+/* @media (max-width: 576px) { 
+  .data-vines-jungle-content{
+    position: inherit;
+    width: auto;
+}
+  
+  
+
+
+  
+} */
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  
+}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
