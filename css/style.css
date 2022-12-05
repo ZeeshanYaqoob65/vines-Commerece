@@ -9,37 +9,37 @@ body {
 .top-bar {
   background: white;
   height: 2.8rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .top-bar a {
-  color: #63a8ce;;
+  color: #63a8ce;
   text-decoration: none;
   font-size: 1.1 rem;
 }
 
-
-
 /*============= NAVIGATION =============*/
 .navbar-brand img {
-  height: 3rem;
+  height: 4rem;
 }
 
 .navbar {
-  font-size: 1.15 rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  letter-spacing: .1 rem;
-  box-shadow: 0.5 rem .5 rem rgba(0, 0, 0, .1);
+  letter-spacing: 0.1 rem;
+  box-shadow: 0.5 rem 0.5 rem rgba(0, 0, 0, 0.1);
   z-index: 1;
   background-color: #63a8ce;
+  position: sticky;
+  top: 0;
 }
 
 .nav-item {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav-link {
-  color: #FFFF !important;
+  color: #ffff !important;
 }
 
 .nav-link.active,
@@ -47,19 +47,15 @@ body {
   color: black !important;
 }
 
-
 /*============= CAROUSEL =============*/
 
 #carousel {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .carousel-inner {
   max-height: 38 rem !important;
 }
-
-
-
 
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next,
@@ -68,12 +64,10 @@ body {
   transition: transform 1.2+2s ease;
 }
 
-
-
 /*-- Carousel Content --*/
 
 /* 3part iamges content  */
-.data-vines-circular{
+.data-vines-circular {
   width: 200px !important;
   height: 200px !important;
   border-radius: 50% !important;
@@ -88,17 +82,17 @@ body {
   overflow: hidden;
   /*-- Correction for iOS --*/
 }
-.fixed{
-background-image: url('../img/matrix.jpg');
-position: fixed;
+.fixed {
+  background-image: url('../img/matrix.jpg');
+  position: fixed;
 }
 .fixed-background {
-padding: 5rem 0;
+  padding: 5rem 0;
 }
 
-.custom-fixed{
+.custom-fixed {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 /* .data-vines-jungle-content{
@@ -108,7 +102,6 @@ padding: 5rem 0;
     margin-top: 40px;
 
 } */
-
 
 /* ========== List Item Style ============ */
 
@@ -120,39 +113,35 @@ ul li:before {
   content: '✓';
   color: #63a8ce;
   margin-right: 10px;
-
 }
-
 
 /*-- Emoji Navbar --*/
 
-
-
 /*============= Jungle section =============*/
 
-.data-vines-fullstack{
+.data-vines-fullstack {
   background-color: #63a8ce;
   color: white;
 }
 
 /*============= FOOTER =============*/
 
-.footer-background{
- background-color: #0c2344 !important;
- color: white;
+.footer-background {
+  background-color: #0c2344 !important;
+  color: white;
 }
 
 /*============= SOCKET =============*/
 
-
-
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
 /* Devices under 768px (md) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
 /* @media (max-width: 576px) { 
   .data-vines-jungle-content{
@@ -165,8 +154,6 @@ ul li:before {
 
   
 } */
-
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -228,17 +215,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 /* yellow section */
 
-.custom-heading-yellow{
+.custom-heading-yellow {
   font-size: larger;
   font-weight: bolder;
   color: #ffc52f;
 }
-.custom-heading-5{
+.custom-heading-5 {
   font-size: large;
   font-weight: bold;
-
 }
-.btn-outline-dark{
+.btn-outline-dark {
   background-color: #4981b3 !important;
   color: white;
 }
@@ -246,13 +232,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4981b3 !important; 
+  background-color: #4981b3 !important;
   color: white !important;
   border-radius: 50% !important;
-  border:#4981b3 ;
+  border: #4981b3;
   display: none;
 }
-.factory-div{
+.factory-div {
   font-weight: bold;
   font-size: 0.5rem;
 }
